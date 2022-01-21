@@ -1,7 +1,7 @@
-# TODO: Fix the pommerman bug with PR
+# TODO: Fix the pommerman bug with PR and upgrade the gym version
 import gym
 from pommerman import make
-from pommerman.agents import BaseAgent, SimpleAgent
+from pommerman.agents import BaseAgent, SimpleAgent, RandomAgent
 from pommerman.constants import Action
 
 __all__ = ['PommermanDuelingSimple', 'PommermanDuelingRandom']
@@ -51,7 +51,7 @@ class PommermanDuelingSimple(PommermanDueling):
 
 class PommermanDuelingRandom(PommermanDueling):
     def __init__(self):
-        super().__init__(SimpleAgent())
+        super().__init__(RandomAgent())
 
 
 if __name__ == "__main__":

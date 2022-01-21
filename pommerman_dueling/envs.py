@@ -33,7 +33,7 @@ class PommermanDueling(gym.Env):
 
         agent_state = self.env.featurize(states[self.env.training_agent])
         agent_reward = rewards[self.env.training_agent]
-        return agent_state, done, agent_reward, info
+        return agent_state, agent_reward, done, info
 
     def reset(self):
         obs = self.env.reset()
@@ -65,7 +65,7 @@ if __name__ == "__main__":
             done = False
 
             while not done:
-                state, done, reward, info = env.step(env.action_space.sample())
+                state, reward, done, info = env.step(env.action_space.sample())
                 env.render()
 
 

@@ -7,7 +7,7 @@ For more information on Pommerman, check out: <https://github.com/MultiAgentLear
 ## Install
 
 ```shell
-git clone
+git clone https://github.com/guikarist/pommerman-dueling.git
 cd pommerman-dueling
 pip install -e .
 ```

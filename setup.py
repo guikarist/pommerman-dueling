@@ -6,4 +6,4 @@ setup(name='pommerman_dueling',
           'gym',
           'pommerman @ git+https://github.com/MultiAgentLearning/playground.git@master#egg=pommerman'
       ]
-      )
+)
